@@ -1,12 +1,10 @@
-<div class="index-wrapper">
-  <%= simple_form_for @task do |f| %>
-    <% if @task.errors.any? %>
-      <% @task.errors.full_messages.each do |error| %>
-        <%= alert_generator error %>
-      <% end %>
+<%= simple_form_for @task do |f| %>
+  <% if @task.errors.any? %>
+    <% @task.errors.full_messages.each do |error| %>
+      <%= alert_generator error %>
     <% end %>
-    <%= f.input :title, label: 'Task Title' %>
-    <%= f.input :description, label: 'Task Description', :input_html => {:rows => 13} %>
-    <%= f.button :submit, class: "btn btn-outline-primary" %>
   <% end %>
-</div>
+  <%= f.input :title, label: 'Task Title' %>
+  <%= f.input :description, label: 'Task Description', :input_html => {:rows => 13} %>
+  <%= f.button :submit, class: "btn btn-outline-primary" %>
+<% end %>
