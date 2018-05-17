@@ -10,27 +10,8 @@
   </head>
 
   <body>
-    <navbar class="navbar navbar-expand navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <%= link_to "Do Th!s", root_path, class: "navbar-brand" %>
-        </div>
-        <% if user_signed_in? %>
-          <%= link_to "Create Task", new_task_path, class: "navbar-text navbar-link" %>
-        <% end %>
 
-        <ul class="nav navbar-nav ml-auto">
-          <% if current_user.present? %>
-            <li class="nav-item">
-              <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-            </li>
-          <% else %>
-            <li class="nav-item"><%= link_to "Login", new_user_session_path, class: "navbar-link" %></li> &nbsp | &nbsp
-            <li><%= link_to "Register", new_user_registration_path, class: "navbar-link" %></li>
-          <% end %>
-        </ul>
-      </div>
-    </navbar>
+    <%= render 'shared/nav' %>
 
     <div class="container">
      <%= yield %>
