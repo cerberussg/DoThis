@@ -6,7 +6,7 @@ ruby '2.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -66,3 +66,4 @@ gem 'jquery-rails'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'gritter', '~> 1.2'
+gem 'dotenv-rails', '~> 2.4'
