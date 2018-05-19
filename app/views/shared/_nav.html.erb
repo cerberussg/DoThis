@@ -8,6 +8,16 @@
     <% end %>
 
     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user-astronaut fa-lg"></i><%= current_user %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
       <% if current_user.present? %>
         <li class="nav-item">
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
