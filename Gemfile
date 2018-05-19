@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
 ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -63,6 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form', '~> 4.0'
 gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails'
+gem 'bundler', '~> 1.16', '>= 1.16.2'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'gritter', '~> 1.2'
