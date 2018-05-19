@@ -141,6 +141,10 @@ a {
  * Footer
  */
 .mastfoot {
+  position: relative;
+  position:absolute;
+  bottom:0;
+  width:100%;
   color: rgba(0, 0, 0, .5);
 }
 
