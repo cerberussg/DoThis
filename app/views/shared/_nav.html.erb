@@ -14,7 +14,7 @@
             <span class="text-sm"><i class="fa fa-user-circle fa-lg"></i><br /><%= current_user.email %></span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Edit Profile", edit_user_registration_path, class: "nav-link dropdown-item" %>
+            <%= link_to "Edit Profile", edit_user_registration_path, method: :get, class: "nav-link dropdown-item" %>
             <a class="dropdown-item" href="#">Reset Password</a>
             <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link dropdown-item" %>
           </div>
