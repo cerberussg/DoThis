@@ -67,3 +67,4 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'gritter', '~> 1.2'
 gem 'dotenv-rails', '~> 2.4'
+gem 'goyette_view_tool', git: "https://github.com/cerberussg/goyette_view_tool"
