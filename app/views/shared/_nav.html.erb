@@ -9,11 +9,11 @@
 
     <ul class="nav navbar-nav ml-auto">
       <% if current_user.present? %>
-        <li class="nav-item dropdown dropright">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="text-sm"><i class="fa fa-user-circle fa-lg"></i>&nbsp<%= current_user.email.downcase %></span>
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <%= link_to "Edit Profile", edit_user_registration_path, class: "nav-link dropdown-item" %>
             <a class="dropdown-item" href="#">Reset Password</a>
             <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "nav-link dropdown-item" %>
