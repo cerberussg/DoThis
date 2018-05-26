@@ -18,7 +18,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-
-$('.flag').click(function(){
-  $(this).toggleClass('pen-clicked');
-});
