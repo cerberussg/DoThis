@@ -35,7 +35,7 @@
           <div class="row task">
 
             <div class="col-md-2">
-              <p><%= link_to complete_task_path(task), data-toggle="tooltip" data-placement="top" title="Complete Task", method: :patch do %></p>
+              <p><%= link_to complete_task_path(task), method: :patch do %></p>
                 <i class="fa fa-check fa-lg"></i>
               <% end %>
               &nbsp;&nbsp;
