@@ -2,5 +2,5 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$('#flag').click, ->
-  return $('.fa-flag').toggleClass('pen-clicked')
+$('#flag').click ->
+  $(this).toggleClass('pen-clicked')
