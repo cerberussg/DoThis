@@ -35,11 +35,10 @@
           <div class="row task">
 
             <div class="col-md-2">
-              <p><%= link_to complete_task_path(task), method: :patch do %></p>
+              <div><%= link_to complete_task_path(task), method: :patch do %></div>
                 <i class="fa fa-check fa-lg"></i>
               <% end %>
-              &nbsp;&nbsp;
-              <a href="#" class="flag", data-toggle="tooltip" data-placement="top" title="Flag Important"><i class="fa fa-flag fa-lg fa-flip-horizontal"></i></a>
+              <div><a href="#" class="flag", data-toggle="tooltip" data-placement="top" title="Flag Important"><i class="fa fa-flag fa-lg fa-flip-horizontal"></i></a></div>
             </div>
 
             <div class="col-md-8">
