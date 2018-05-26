@@ -4,4 +4,4 @@
 $(document).on "turbolinks:load", ->
   $(".flag").on "click", (e) ->
     e.preventDefault()
-    $(this).toggleClass("pen-clicked")
+    $(this).toggleClass("flag-clicked")
