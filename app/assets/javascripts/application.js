@@ -19,6 +19,6 @@
 //= require turbolinks
 //= require_tree .
 
-$('.fa-pennant').click(function(){
+$('.fa-flag').click(function(){
   $(this).toggleClass('pen-clicked');
 });
