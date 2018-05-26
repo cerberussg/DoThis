@@ -3,4 +3,4 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $('#flag').click, ->
-  $('.fa-flag').toggleClass('pen-clicked')
+  return $('.fa-flag').toggleClass('pen-clicked')
