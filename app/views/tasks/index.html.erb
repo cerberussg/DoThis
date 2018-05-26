@@ -9,7 +9,7 @@
 <!-- For Completed Tasks-->
           <div class="row task">
 
-            <div class="col-md-1">
+            <div class="col-md-2">
               <p><%= link_to complete_task_path(task), method: :patch do %></p>
                 <i class="fa fa-check fa-lg"></i>
               <% end %>
@@ -21,7 +21,7 @@
               <% end %>
             </div>
 
-            <div class="col-md-10">
+            <div class="col-md-9">
               <h2 style="opacity: 0.5;" class="task-title"><strike><%= link_to task.title, task %></strike></h2>
               <p style="opacity: 0.5;" class="task-sub-title task-desc"><%= simple_format(task.description) %></p>
               <p style="opacity: 0.5;" class="time-created-at task-sub-title">Completed <%= time_ago_in_words(task.completed_at) %> ago</p>
