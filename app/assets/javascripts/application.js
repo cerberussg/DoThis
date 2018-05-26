@@ -18,3 +18,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$('.fa-pennant').click(function(){
+  $(this).toggleClass('pen-clicked');
+});
