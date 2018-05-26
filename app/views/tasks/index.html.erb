@@ -34,10 +34,14 @@
 
           <div class="row task">
 
-            <div class="col-md-2">
+            <div class="col-md-1">
               <p><%= link_to complete_task_path(task), method: :patch do %></p>
                 <i class="fa fa-check fa-lg"></i>
               <% end %>
+            </div>
+
+            <div class="col-md-1">
+              <i class="fa fa-pennant fa-lg pen-clicked" data-fa-transform="rotate-180"></i>
             </div>
 
             <div class="col-md-8">
