@@ -2,6 +2,6 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on "turbolinks:load", ->
-  $("#flag").on "click", (e) ->
+  $(".flag").on "click", (e) ->
     e.preventDefault()
     $(this).toggleClass("pen-clicked")
