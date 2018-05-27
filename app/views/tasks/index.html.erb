@@ -5,9 +5,9 @@
     <% @tasks.each do |task| %>
       <div class="index-wrapper">
         <% if task.completed? %>
-          <%= render 'completed' %>
+          <%= render partial: 'completed' %>
         <% else %>
-          <%= render 'incomplete' %>
+          <%= render partial: 'incomplete' %>
         <% end %>
       </div>
     <% end %>
