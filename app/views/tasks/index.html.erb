@@ -4,7 +4,6 @@
   <div class="col-md-10 col-md-offset-1">
     <% @tasks.each do |task| %>
       <div class="index-wrapper">
-
         <% if task.completed? %>
           <%= render 'completed' %>
         <% else %>
@@ -13,7 +12,6 @@
       </div>
     <% end %>
   </div>
-
 <% else %>
   <%= render 'welcome_page' %>
 <% end %>
