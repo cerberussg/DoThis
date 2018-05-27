@@ -4,11 +4,7 @@
   <div class="col-md-10 col-md-offset-1">
     <% @tasks.each do |task| %>
       <div class="index-wrapper">
-        <% if task.completed? %>
-          <%= render partial: 'completed' %>
-        <% else %>
-          <%= render partial: 'incomplete' %>
-        <% end %>
+        <%= render 'completed' %>
       </div>
     <% end %>
   </div>
