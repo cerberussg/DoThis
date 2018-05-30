@@ -34,8 +34,10 @@
 
             <div class="col-md-1">
               <p class="flag">
-                <%= link_to fa_icon('flag'), toggle_status_task_path(task) %>
+                <div class="flag">
+                  <%= link_to fa_icon('flag'), class: "fa-lg fa-flip-horizontal", toggle_status_task_path(task) %>
               </p>
+                </div>
             </div>
 
             <div class="col-md-9">
