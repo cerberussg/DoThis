@@ -2,6 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on "turbolinks:load", ->
+  # Toggle Class
   $(".flag").on "click", (e) ->
     e.preventDefault()
     $(this).toggleClass("flag-clicked")
