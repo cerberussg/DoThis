@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :find_task, only: [:show, :edit, :update, :destroy]
+  before_action :find_task, only: [:show, :edit, :update, :destroy, :toggle_status]
 
   def index
     if user_signed_in?
