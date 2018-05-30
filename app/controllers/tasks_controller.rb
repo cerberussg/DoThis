@@ -45,7 +45,7 @@ class TasksController < ApplicationController
     elsif @task.important?
       @task.unimportant!
     end
-    redirect_to tasks_url, notice: 'Task status has been updated'
+    redirect_to root_path, notice: 'Task status has been updated'
   end
 
   def complete
