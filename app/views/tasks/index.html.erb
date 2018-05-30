@@ -33,10 +33,9 @@
             </div>
 
             <div class="col-md-1">
-              <p>
-                <a href="#" class="flag", data-toggle="tooltip" data-placement="top" title="Flag Important">
+              <p class="flag">
+                <%= link_to fa_icon('flag'), toggle_status_task_path(task) %>
               </p>
-                <i class="fa fa-flag fa-lg fa-flip-horizontal"></i></a>
             </div>
 
             <div class="col-md-9">

@@ -39,6 +39,15 @@ class TasksController < ApplicationController
     redirect_to root_path
   end
 
+  def toggle_status
+    if @task.unimportant?
+      @task.important!
+    elsif @task.important?
+      @task.unimportant!
+    end
+    redirect_to tasks_url, notice: 'Task status has been updated'
+  end
+
   def complete
     @task = Task.find(params[:id])
     @task.update_attribute(:completed_at, Time.now)
