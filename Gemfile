@@ -63,7 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form', '~> 4.0'
 gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails'
-gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'devise', '~> 4.6', '>= 4.6.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'gritter', '~> 1.2'
 gem 'dotenv-rails', '~> 2.4'
