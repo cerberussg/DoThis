@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+  def copyright_generator
+    @copyright = GoyetteViewTool::Renderer.copyright 'Scott Goyette', 'All rights reserved'
+  end
+
   def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
 

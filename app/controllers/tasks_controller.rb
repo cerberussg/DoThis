@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :find_task, only: [:show, :edit, :update, :destroy]
+  before_action :find_task, only: [:show, :edit, :update, :destroy, :toggle_status]
 
   def index
     if user_signed_in?
@@ -39,6 +39,15 @@ class TasksController < ApplicationController
     redirect_to root_path
   end
 
+  def toggle_status
+    if @task.unimportant?
+      @task.important!
+    elsif @task.important?
+      @task.unimportant!
+    end
+    redirect_to root_path, notice: 'Task status has been updated'
+  end
+
   def complete
     @task = Task.find(params[:id])
     @task.update_attribute(:completed_at, Time.now)
@@ -48,7 +57,7 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:title, :description)
+    params.require(:task).permit(:title, :description, :status)
   end
 
   def find_task
